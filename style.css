@@ -1,11 +1,30 @@
 html{
-border:0;
-padding:0;
-margin:0;
+    border:0;
+    padding:0;
+    margin:0;
 }
 
 body{
-border:0;
-padding:0;
-margin:50px;
+    font-family:serif;
+    font-size: 150%;
+    color: black;
+    border:0;
+    padding:0;
+    margin:50px;
+}
+
+a:hover{
+    color: crimson;
+}
+
+section {
+    font-size: 150%;
+    line-height: 150%;
+}
+
+.emoji{
+    padding: 0 5 0 10;
+    font-size: 150%;
+    text-decoration: none !important;
+    vertical-align: middle;
 }
