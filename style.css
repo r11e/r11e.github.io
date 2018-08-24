@@ -20,7 +20,7 @@ a:hover{
 
 section {
     font-size: 3vw;
-    line-height: 4.5vw;
+    line-height: 140%;
 }
 
 .emoji{
@@ -34,7 +34,7 @@ section {
       width:100%;
       margin: 0 auto;
       color:#313131;
-      font-size:45px;
+      font-size:3vw;
       font-weight: bold;
       -webkit-animation:colorchange 40s infinite alternate;
     }
