@@ -19,13 +19,12 @@ a:hover{
 }
 
 section {
-    font-size: 3vw;
-    line-height: 1.3em;
+    font-size: 1.2em;
 }
 
 .emoji{
     padding: 0 5 0 10;
-    font-size: 3vw;
+    font-size: 1.2em;
     text-decoration: none !important;
     vertical-align: middle;
 }
@@ -34,7 +33,7 @@ section {
       width:100%;
       margin: 0 auto;
       color:#313131;
-      font-size:3vw;
+      font-size:1.5em;
       font-weight: bold;
       -webkit-animation:colorchange 40s infinite alternate;
     }
