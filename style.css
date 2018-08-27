@@ -14,10 +14,6 @@ body{
     max-width: 1000px;
 }
 
-a {
-    line-height: 1.3em;
-}
-
 a:hover{
     color: crimson;
 }
@@ -31,6 +27,7 @@ section {
     font-size: 1.2em;
     text-decoration: none !important;
     vertical-align: middle;
+    line-height: 1.2em;
 }
 
 .linear-wipe {
