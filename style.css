@@ -26,7 +26,7 @@ section {
     padding: 0 5 0 10;
     font-size: 1.2em;
     text-decoration: none !important;
-    vertical-align: middle;
+    vertical-align: sub;
     line-height: 1.2em;
 }
 
