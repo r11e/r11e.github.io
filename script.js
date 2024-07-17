@@ -25,3 +25,16 @@ var openLink = function (list) {
     var link = list[rd];
     window.open(link);
 };
+
+var openLink = function (...lists) {
+    // Randomly choose a list
+    var listIndex = Math.floor(Math.random() * lists.length);
+    var selectedList = lists[listIndex];
+
+    // Randomly choose a link from the selected list
+    var rd = Math.floor(Math.random() * selectedList.length);
+    var link = selectedList[rd];
+
+    // Open the link in a new tab
+    window.open(link, '_blank');
+};
