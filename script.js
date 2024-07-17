@@ -20,13 +20,15 @@ var mozMost = ["Facebook.com", "https://Twitter.com", "https://Google.com", "htt
 ];
 
 var openLink = function (...lists) {
-    // Randomly choose a list
-    var listIndex = Math.floor(Math.random() * lists.length);
-    var selectedList = lists[listIndex];
+    // Merge all lists into one array
+    var mergedList = [].concat(...lists);
 
-    // Randomly choose a link from the selected list
-    var rd = Math.floor(Math.random() * selectedList.length);
-    var link = selectedList[rd];
+    // Remove duplicate entries
+    var uniqueList = Array.from(new Set(mergedList));
+
+    // Randomly choose a link from the unique list
+    var rd = Math.floor(Math.random() * uniqueList.length);
+    var link = uniqueList[rd];
 
     // Open the link in a new tab
     window.open(link, '_blank');
