@@ -39,7 +39,10 @@ var mozMost = ["Facebook.com", "https://Twitter.com", "https://Google.com", "htt
 
 // Call openLink for each link on the page
 document.addEventListener('DOMContentLoaded', function () {
-    openLink('link1', list1, list2);
-    openLink('link2', list3, list4);
-    openLink('link3', list5, list6);
+    openLink('alllists', mozMost2024, mozMost, agenturliste, dax, fortune500);
+    openLink('fortune500', fortune500);
+    openLink('dax', dax);
+    openLink('agenturliste', agenturliste);
+    openLink('mozMost2024', mozMost2024);
+    openLink('mozMost', mozMost);
 });
