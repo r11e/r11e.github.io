@@ -30,6 +30,24 @@ var openLink = function (...lists) {
     var rd = Math.floor(Math.random() * uniqueList.length);
     var link = uniqueList[rd];
 
-    // Open the link in a new tab
-    window.open(link, '_blank');
+    // Create an anchor element
+    var a = document.createElement('a');
+    a.href = link;
+    a.target = '_blank';
+
+    // Append the anchor to the body
+    document.body.appendChild(a);
+
+    // Simulate a click on the anchor
+    var event = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+        metaKey: true // For CMD+Click behavior
+    });
+
+    a.dispatchEvent(event);
+
+    // Remove the anchor from the body
+    document.body.removeChild(a);
 };
